@@ -1,0 +1,12 @@
+﻿# michael moreno
+def contar_vocales(frase):
+    vocales = "aeiouÃ¡Ã©Ã­Ã³Ãº"
+    return sum(1 for c in frase.lower() if c in vocales)
+
+def main():
+    frase = input("Ingresa una frase: ")
+    print(f"La frase tiene {contar_vocales(frase)} vocales.")
+
+if __name__ == '__main__':
+    main()
+
